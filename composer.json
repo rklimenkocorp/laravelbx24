@@ -11,7 +11,7 @@
         "php": ">=7.2.0"
     },
     "type": "laravel-packages",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Mind4me\\Bx24_integration\\": "src/"
