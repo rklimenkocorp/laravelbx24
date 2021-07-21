@@ -1,0 +1,16 @@
+{
+    "name": "mind4me/bx24_integration",
+    "description": "integrations laravel-bx24",
+    "authors": [
+        {
+            "name": "Klimenko Roman",
+            "email": "rk@mind4.me"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mind4me\\Bx24_integration\\": "src/"
+        }
+    },
+    "require": {}
+}
