@@ -7,10 +7,13 @@
             "email": "rk@mind4.me"
         }
     ],
+    "require": {
+        "php": ">=7.2.0"
+    },
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Mind4me\\Bx24_integration\\": "src/"
         }
     },
-    "require": {}
 }

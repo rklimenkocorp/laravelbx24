@@ -20,7 +20,7 @@ MIND4ME_CLIENT_SECRET=Fqplr9gyyjdY6usdfsdfmlnsdfjngGyx1HTdeEcqEaGdix
 Then go to console, in path for your laravel project and enter this command
 
 ```bash
-composer require bla bla
+composer require mind4me/bx24_integration
 ```
 In file config/app.php insert in 'providers' => [
 
