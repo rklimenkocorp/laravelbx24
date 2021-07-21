@@ -3,6 +3,7 @@
 namespace Mind4me\Bx24_integration\Console;
 
 use Illuminate\Console\Command;
+use Mind4me\Bx24_integration\Services\B24;
 
 class Integration extends Command
 {

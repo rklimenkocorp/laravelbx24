@@ -12,9 +12,6 @@
             "email": "rk@mind4.me"
         }
     ],
-    "require": {
-        "php": ">=7.3.0",
-    },
     "type": "packages",
     "minimum-stability": "dev",
     "autoload": {
