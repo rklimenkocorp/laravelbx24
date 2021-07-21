@@ -2,6 +2,10 @@
     "name": "mind4me/bx24_integration",
     "description": "integrations laravel-bx24",
     "version": "1.0",
+    "keywords": [
+        "bitrix24",
+        "laravel"
+    ],
     "authors": [
         {
             "name": "Klimenko Roman",
@@ -9,10 +13,14 @@
         }
     ],
     "require": {
-        "php": ">=7.2.0"
+        "php": ">=7.3.0",
+        "fruitcake/laravel-cors": ">=2.0",
+        "guzzlehttp/guzzle": ">=7.0.1",
+        "laravel/framework": ">=8.12",
+        "laravel/tinker": ">=2.5"
     },
-    "type": "laravel-packages",
-    "minimum-stability": "stable",
+    "type": "packages",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Mind4me\\Bx24_integration\\": "src/"
