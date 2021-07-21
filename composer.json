@@ -15,5 +15,5 @@
         "psr-4": {
             "Mind4me\\Bx24_integration\\": "src/"
         }
-    },
+    }
 }
