@@ -2,9 +2,9 @@
 
 namespace Mind4me\Bx24_integration\Console;
 
-use App\Models\Integrations\User;
-use App\Services\Integrations\B24;
 use Illuminate\Console\Command;
+use Mind4me\Bx24_integration\Models\User;
+use Mind4me\Bx24_integration\Services\B24;
 
 class UsersIntegration extends Command
 {
