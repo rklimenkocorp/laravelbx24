@@ -21,6 +21,10 @@ class B24
         $this->CRM_HOST = config('integration.CRM_HOST');
         $this->CLIENT_ID = config('integration.CLIENT_ID');
         $this->CLIENT_SECRET = config('integration.CLIENT_SECRET');
+
+        $this->USER = config('integration.USER');
+        $this->PASSWORD = config('integration.PASSWORD');
+
         $this->httpClient = new Client([
             'base_uri' => $this->CRM_HOST,
             'cookies' => true,
@@ -33,8 +37,18 @@ class B24
             'protocols' => ['https', 'http'],
         ]);
 
+        $auth_user = $this->httpClient->request('post', "/?login=yes", [
+            'form_params' => [
+                'backurl' => '/',
+                'AUTH_FORM' => 'Y',
+                'TYPE' => 'AUTH',
+                'USER_LOGIN' => $this->USER,
+                'USER_PASSWORD' => $this->PASSWORD,
+                'USER_REMEMBER' => 'Y',
+            ]
+        ]);
 
-        $auth_app = $this->httpClient->request('get', "/oauth/authorize/", [
+        $auth_app = $this->httpClient->request('get', "/oauth/authorize/?client_id={$this->CLIENT_ID}", [
             'query' => [
                 'client_id' => $this->CLIENT_ID,
             ]
