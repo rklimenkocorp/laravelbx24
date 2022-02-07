@@ -33,18 +33,8 @@ class B24
             'protocols' => ['https', 'http'],
         ]);
 
-        $auth_user = $this->httpClient->request('post', "/?login=yes", [
-            'form_params' => [
-                'backurl' => '/',
-                'AUTH_FORM' => 'Y',
-                'TYPE' => 'AUTH',
-                'USER_LOGIN' => 'Mind4.me',
-                'USER_PASSWORD' => 'zZ!23456',
-                'USER_REMEMBER' => 'Y',
-            ]
-        ]);
 
-        $auth_app = $this->httpClient->request('get', "/oauth/authorize/?client_id=local.60f43109eb2da2.29754147", [
+        $auth_app = $this->httpClient->request('get', "/oauth/authorize/", [
             'query' => [
                 'client_id' => $this->CLIENT_ID,
             ]
