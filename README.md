@@ -13,8 +13,10 @@ After create application you should copy "client_id" and "client_secret" in your
 
 ```bash
 MIND4ME_HOST=https://URL_TO_YOUR_BITRIX
-MIND4ME_CLIENT_ID=local.60f43109e2342342.29754147
-MIND4ME_CLIENT_SECRET=Fqplr9gyyjdY6usdfsdfmlnsdfjngGyx1HTdeEcqEaGdix
+MIND4ME_CLIENT_ID=local.60f43109e2342342.297444147
+MIND4ME_CLIENT_SECRET=Fqplr9gyyjdY6usdfsdfmlnsdfjngGyfgfgTdeEcqEaGdix
+MIND4ME_USER_LOGIN=Login
+MIND4ME_USER_PASSWORD=Password
 ```
 
 Then go to console, in path for your laravel project and enter this command
@@ -40,7 +42,7 @@ php artisan config:clear
 
 
 ## Usage
-In app/Console/Kernel.php add command for integration with the time that you need for integration!
+In app/Console/Kernel.php add command for integration with the time that you need for integration! When cron begin working you see result in database
 
 ```php
 $schedule->command('integration:get-users')->hourly(); // for users
